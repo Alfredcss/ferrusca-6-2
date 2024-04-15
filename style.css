@@ -1,0 +1,62 @@
+body {
+  background-color: #d3d3d3; /* Gris claro */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente Verdana */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del contenedor */
+.container {
+  padding: 20px;
+  max-width: 800px; /* Ajustar el ancho máximo del contenido */
+  margin: 0 auto;
+}
+
+/* Estilo de títulos */
+.titulo {
+  text-align: center; /* Centra el texto */
+}
+
+.subtitulo,
+h3,
+h4 {
+  text-align: center; /* Centra los subtítulos y otros niveles de títulos */
+}
+
+/* Estilo para imágenes */
+.imagen {
+  width: 50%; /* Las imágenes ocupan la mitad del ancho */
+  height: auto;
+}
+
+/* Estilo para los textos de las secciones */
+.descripcion,
+.autor {
+  text-align: justify; /* Ajusta el texto para que sea parejo */
+}
+
+/* Estilo para las películas */
+.pelicula {
+  display: flex; /* Crea un contenedor de tipo flex para organizar la imagen y el texto */
+  margin-bottom: 20px; /* Espaciado entre las películas */
+}
+
+/* Alternar orientación de flex-direction */
+.pelicula:nth-child(even) {
+  flex-direction: row-reverse; /* Alterna la dirección para los elementos pares (derecha) */
+}
+
+/* Espaciado interno entre imagen y texto */
+.pelicula img {
+  margin-right: 20px;
+}
+
+.pelicula:nth-child(even) img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Estilo para los textos de las películas */
+.descripcion {
+  flex: 1; /* Flexibilidad para ajustar al tamaño restante */
+}

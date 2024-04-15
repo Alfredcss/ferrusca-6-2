@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+
+    <style>
+        /* Estilo global */
+        body {
+            background-color: #d3d3d3; /* Gris claro */
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente Verdana */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo del contenedor */
+        .container {
+            padding: 20px;
+            max-width: 800px; /* Ajustar el ancho máximo del contenido */
+            margin: 0 auto;
+        }
+
+        /* Estilo de los títulos */
+        .titulo {
+            text-align: center; /* Centrar el texto */
+        }
+
+        .subtitulo,
+        h3,
+        h4 {
+            text-align: center; /* Centrar los subtítulos y otros niveles de títulos */
+        }
+
+        /* Estilo para imágenes */
+        .imagen {
+            max-width: 300px; /* Ancho máximo de 500px */
+            max-height: 400px; /* Altura máxima de 500px */
+            height: auto; /* Mantiene la proporción de altura de la imagen */
+        }
+
+        /* Estilo para las películas */
+        .pelicula {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        /* Alterna la dirección para los elementos pares (derecha) */
+        .pelicula:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Espaciado interno entre imagen y texto */
+        .pelicula img {
+            margin-right: 20px;
+        }
+
+        /* Descripción de las películas */
+        .descripcion {
+            flex: 1;
+        }
+
+        /* Lista de libros */
+        .quijote{
+          margin-right: 0;
+            margin-left: 250px; /*para mover a la derecha*/
+        }
+        .libro1{
+          text-align: justify;
+          font-size: x-large;
+        }
+        .libro2{
+          text-align: justify;
+          font-size: x-large;
+        }
+        .lista{
+          margin-left: 240px; 
+        }
+        .fortalezas{
+          text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">Uso de Imágenes</h1>
+
+        <!-- Sección Películas -->
+        <section id="peliculas">
+            <h2 class="subtitulo">Películas Favoritas</h2>
+            <p class="autor"><strong>Diego</strong> Ferrusca Enríquez.</p>
+
+            <!-- Película 1: Pearl Harbor -->
+            <div class="pelicula">
+                <img src="https://www.ecartelera.com/carteles/5300/5337/001_m.jpg" alt="Pearl Harbor" class="imagen">
+                <div class="descripcion">
+                    <h3 class="subtitulo">Pearl Harbor</h3>
+                    <p>Me parece una gran película, un manejo de la épica impresionante, la banda sonora es increíble, el aspecto dramático está muy bien llevado. Es cierto que le hubieran podido quitar unos 20 minutos de escenas románticas que a veces llegan a cortar el lado bélico, pero al final, cuando es la hora de la batalla, creo que Bay lo hizo genial y claro, tal vez el final no sería igual sin esas escenas extras. Un gran drama bélico romántico.</p>
+                </div>
+            </div>
+
+            <!-- Película 2: John Wick -->
+            <div class="pelicula">
+                <img src="https://media.giphy.com/media/l3q2A93zxqHnFDkuQ/source.gif" alt="John Wick" class="imagen">
+                <div class="descripcion">
+                    <h3 class="subtitulo">John Wick</h3>
+                    <p>Una increíble trama y unas escenas de acción excepcionales. Con una historia que se va construyendo de poco a poco, donde tanto la historia como las escenas de acción llegan a un nivel increíble, con unas coreografías muy bien logradas que se ven naturales. Con el gran actor Keanu Reeves, la película, los personajes y los escenarios se vuelven icónicos en unos pocos minutos. Sin duda, John Wick es una película en la cual estarás al filo del asiento por lo antes nombrado. Una película que se volvió obligatoria para todos los amantes del cine de acción o para quienes buscan una historia muy bien estructurada sin llegar a una gran complejidad.</p>
+                </div>
+            </div>
+
+            <!-- Película 3: 6 Grandes Héroes -->
+            <div class="pelicula">
+                <img src="https://th.bing.com/th/id/OIP.Ie_b7mNSYLpiy2nyBiqlYwHaCv?w=301&h=129&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="6 Grandes Héroes" class="imagen">
+                <div class="descripcion">
+                    <h3 class="subtitulo">6 Grandes Héroes</h3>
+                    <p>Es una de mis películas favoritas de Disney. La animación es increíblemente espectacular, la historia es muy bonita, los personajes carismáticos, los efectos especiales, sin duda una de las mejores películas que ha hecho Disney en su historia.</p>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <h2 class="subtitulo">Libros que he leído</h2>
+        <h3 class="subtitulo-right">Don Quijote de la mancha</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Don_Quijote_and_Sancho_Panza.jpg" alt="Libros" class="quijote" width="300" height="400">
+        <ul class="lista">
+          <li>
+              <h2 class="libro1">La Divina Comedia</h2>
+          </li>
+          <li>
+              <h4 class="libro2">Ángeles de la Nieve</h4>
+          </li>
+      </ul>
+        
+        <br/>
+        <h1 class="fortalezas">Fortalezas Que Tengo Que Mejorar</h1>
+        <ul>
+          <li>
+
+          </li>
+        </ul>
+        <h4 class="subtitulo-left">Ser mas Responsable</h4>
+        <h3 class="subtitulo-center">Ganar mas experiencia</h3>
+        <h4 class="subtitulo-right">Tener mas capacidad analitica</h4>
+        <img src="https://paulacaneque-psicologa.com/wp-content/uploads/2020/08/fortalezas.jpg" alt="Fortalezas" class="imagen-center">
+        <h3 class="subtitulo-center">Ser mas creativo al hacer act.</h3>
+        <h4 class="subtitulo-left">Mantener mi honestidad</h4>
+
+        
+    </div>
+</body>
+
+</html>
